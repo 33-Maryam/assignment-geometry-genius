@@ -1,266 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geometry Genius</title>
-        <!-- Default font family -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
-          rel="stylesheet"
-        />
-        <!-- bootstrap styles -->
-        <link rel="stylesheet" href="styles/bootstrap.min.css" />
-        <!-- custom styles -->
-        <link rel="stylesheet" href="styles/custom-style.css" />
-</head>
-<body>
-     <!-- Header section-->
-     <header>
-        <nav
-          class="container container-fluid navbar navbar-expand-lg py-4 mt-5 nav-custom"
-        >
-          <div class="ms-5">
-            <h1>Interactive</h1>
-            <h2>Geometry Genius</h2>
-          </div>
-  
-          <button id="btn-blog" class="btn btn-primary ms-auto me-5 px-4">
-            Blog
-          </button>
-        </nav>
-      </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry Genious</title>
+    <!-- Default font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap styles -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <!-- custom styles -->
+    <link rel="stylesheet" href="styles/custom-style.css" />
+  </head>
+  <body>
+    <!-- Header section-->
+    <header>
+      <nav
+        class="container container-fluid navbar navbar-expand-lg py-4 mt-5 nav-custom"
+      >
+        <div class="ms-5">
+          <h1>Interactive</h1>
+          <h2>Geometry Genius</h2>
+        </div>
 
-       <!-- Main section -->
+        <button id="btn-blog" class="btn btn-primary ms-auto me-5 px-4">
+          Blog
+        </button>
+      </nav>
+    </header>
+
+    <!-- Main section -->
     <main class="mt-5 container container-fluid">
-        <!-- Geometry Area -->
-        <section class="row">
-          <div class="col-9 row">
-            <div class="cards-custom py-4 col-12 col-sm-6 col-md-4 col-lg-4">
-              <div class="text-center mb-4">
-                <img class="img-fluid" src="images/triangle.png" alt="" />
-              </div>
-  
-              <h3 id="triangle" class="text-center mb-3">Triangle</h3>
-              <p class="text-center mb-3">Area (A) = 0.5×b×h</p>
-  
-              <div class="text-center mb-3">
-                <input
-                  class="me-3 mb-2 rounded-2 w-25"
-                  type="text"
-                  name=""
-                  id="triangle-b"
-                  placeholder="b"
-                />
-                <span>cm</span>
-                <input
-                  class="me-3 mb-2 rounded-2 w-25"
-                  type="text"
-                  name=""
-                  id="triangle-h"
-                  placeholder="h"
-                />
-                <span>cm</span>
-              </div>
-  
-              <div class="text-center">
-                <button id="calculate-triangle" class="btn btn-primary py- px-5">
-                  Calculate
-                </button>
-              </div>
+      <!-- Geometry Area -->
+      <section class="row">
+        <div class="col-9 row">
+          <div class="cards-custom py-4 col-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="text-center mb-4">
+              <img class="img-fluid" src="images/triangle.png" alt="" />
             </div>
-  
-            <div class="cards-custom py-4 col-12 col-sm-6 col-md-4 col-lg-4">
-              <div class="text-center mb-4">
-                <img class="img-fluid" src="images/rectangle.png" alt="" />
-              </div>
-  
-              <h3 id="rectangle" class="text-center mb-3">Rectangle</h3>
-              <p class="text-center mb-3">Area (A) = w×l</p>
-  
-              <div class="text-center mb-3">
-                <input
-                  class="me-3 mb-2 rounded-2 w-25"
-                  type="text"
-                  name=""
-                  id="rectangle-w"
-                  placeholder="w"
-                />
-                <span>cm</span>
-                <input
-                  class="me-3 mb-2 rounded-2 w-25"
-                  type="text"
-                  name=""
-                  id="rectangle-l"
-                  placeholder="l"
-                />
-                <span>cm</span>
-              </div>
-  
-              <div class="text-center">
-                <button id="calculate-rectangle" class="btn btn-primary py- px-5">
-                  Calculate
-                </button>
-              </div>
+
+            <h3 id="triangle" class="text-center mb-3">Triangle</h3>
+            <p class="text-center mb-3">Area (A) = 0.5×b×h</p>
+
+            <div class="text-center mb-3">
+              <input
+                class="me-3 mb-2 rounded-2 w-25"
+                type="text"
+                name=""
+                id="triangle-b"
+                placeholder="b"
+              />
+              <span>cm</span>
+              <input
+                class="me-3 mb-2 rounded-2 w-25"
+                type="text"
+                name=""
+                id="triangle-h"
+                placeholder="h"
+              />
+              <span>cm</span>
             </div>
-  
-            <div class="cards-custom py-4 col-12 col-sm-6 col-md-4 col-lg-4">
-              <div class="text-center mb-4">
-                <img class="img-fluid" src="images/parallelogram.png" alt="" />
-              </div>
-  
-              <h3 id="parallelogram" class="text-center mb-3">Parallelogram</h3>
-              <p class="text-center mb-3">Area (A) = b×h</p>
-  
-              <div class="text-center mb-3">
-                <input
-                  class="me-3 mb-2 rounded-2 w-25"
-                  type="text"
-                  name=""
-                  id="parallelogram-b"
-                  placeholder="b"
-                />
-                <span>cm</span>
-                <input
-                  class="me-3 mb-2 rounded-2 w-25"
-                  type="text"
-                  name=""
-                  id="parallelogram-h"
-                  placeholder="h"
-                />
-                <span>cm</span>
-              </div>
-  
-              <div class="text-center">
-                <button
-                  id="calculate-parallelogram"
-                  class="btn btn-primary py- px-5"
-                >
-                  Calculate
-                </button>
-              </div>
-            </div>
-  
-            <div class="cards-custom py-4 col-12 col-sm-6 col-md-4 col-lg-4">
-              <div class="text-center mb-4">
-                <img class="img-fluid" src="images/rhombus.png" alt="" />
-              </div>
-  
-              <h3 id="rhombus" class="text-center mb-3">Rhombus</h3>
-              <p class="text-center mb-3">Area (A) = 0.5×d₁×d₂</p>
-  
-              <div class="text-center mb-3">
-                <input
-                  class="me-3 mb-2 rounded-2 w-25"
-                  type="text"
-                  name=""
-                  id="rhombus-d1"
-                  placeholder="d1"
-                />
-                <span>cm</span>
-                <input
-                  class="me-3 mb-2 rounded-2 w-25"
-                  type="text"
-                  name=""
-                  id="rhombus-d2"
-                  placeholder="d2"
-                />
-                <span>cm</span>
-              </div>
-  
-              <div id="calculate-rhombus" class="text-center">
-                <button class="btn btn-primary py- px-5">Calculate</button>
-              </div>
-            </div>
-  
-            <div class="cards-custom py-4 col-12 col-sm-6 col-md-4 col-lg-4">
-              <div class="text-center mb-4">
-                <img class="img-fluid" src="images/pentagon.png" alt="" />
-              </div>
-  
-              <h3 id="pentagon" class="text-center mb-3">Pentagon</h3>
-              <p class="text-center mb-3">Area (A) = 0.5×p×b</p>
-  
-              <div class="text-center mb-3">
-                <input
-                  class="me-3 mb-2 rounded-2 w-25"
-                  type="text"
-                  name=""
-                  id="pentagon-p"
-                  placeholder="p"
-                />
-                <span>cm</span>
-                <input
-                  class="me-3 mb-2 rounded-2 w-25"
-                  type="text"
-                  name=""
-                  id="pentagon-b"
-                  placeholder="b"
-                />
-                <span>cm</span>
-              </div>
-  
-              <div id="calculate-pentagon" class="text-center">
-                <button class="btn btn-primary py- px-5">Calculate</button>
-              </div>
-            </div>
-  
-            <div class="cards-custom py-4 col-12 col-sm-6 col-md-4 col-lg-4">
-              <div class="text-center mb-4">
-                <img class="img-fluid" src="images/ellipse.png" alt="" />
-              </div>
-  
-              <h3 id="ellipse" class="text-center mb-3">Ellipse</h3>
-              <p class="text-center mb-3">Area (A) = π×a×b</p>
-  
-              <div class="text-center mb-3">
-                <input
-                  class="me-3 mb-2 rounded-2 w-25"
-                  type="text"
-                  name=""
-                  id="ellipse-a"
-                  placeholder="a"
-                />
-                <span>cm</span>
-                <input
-                  class="me-3 mb-2 rounded-2 w-25"
-                  type="text"
-                  name=""
-                  id="ellipse-b"
-                  placeholder="b"
-                />
-                <span>cm</span>
-              </div>
-  
-              <div class="text-center">
-                <button id="calculate-ellipse" class="btn btn-primary py- px-5">
-                  Calculate
-                </button>
-              </div>
+
+            <div class="text-center">
+              <button id="calculate-triangle" class="btn btn-primary py- px-5">
+                Calculate
+              </button>
             </div>
           </div>
-  
-          <div class="col-3 result-area">
-            <h3 class="text-center text-decoration-underline">
-              Area Calculation
-            </h3>
-  
-            <table>
-              <tbody id="table-container"></tbody>
-            </table>
+
+          <div class="cards-custom py-4 col-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="text-center mb-4">
+              <img class="img-fluid" src="images/rectangle.png" alt="" />
+            </div>
+
+            <h3 id="rectangle" class="text-center mb-3">Rectangle</h3>
+            <p class="text-center mb-3">Area (A) = w×l</p>
+
+            <div class="text-center mb-3">
+              <input
+                class="me-3 mb-2 rounded-2 w-25"
+                type="text"
+                name=""
+                id="rectangle-w"
+                placeholder="w"
+              />
+              <span>cm</span>
+              <input
+                class="me-3 mb-2 rounded-2 w-25"
+                type="text"
+                name=""
+                id="rectangle-l"
+                placeholder="l"
+              />
+              <span>cm</span>
+            </div>
+
+            <div class="text-center">
+              <button id="calculate-rectangle" class="btn btn-primary py- px-5">
+                Calculate
+              </button>
+            </div>
           </div>
-        </section>
-      </main>
-  
-      <!-- Javacript -->
-  
-      <script src="js/script.js"></script>
-    </body>
-  </html>
-</body>
+
+          <div class="cards-custom py-4 col-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="text-center mb-4">
+              <img class="img-fluid" src="images/parallelogram.png" alt="" />
+            </div>
+
+            <h3 id="parallelogram" class="text-center mb-3">Parallelogram</h3>
+            <p class="text-center mb-3">Area (A) = b×h</p>
+
+            <div class="text-center mb-3">
+              <input
+                class="me-3 mb-2 rounded-2 w-25"
+                type="text"
+                name=""
+                id="parallelogram-b"
+                placeholder="b"
+              />
+              <span>cm</span>
+              <input
+                class="me-3 mb-2 rounded-2 w-25"
+                type="text"
+                name=""
+                id="parallelogram-h"
+                placeholder="h"
+              />
+              <span>cm</span>
+            </div>
+
+            <div class="text-center">
+              <button
+                id="calculate-parallelogram"
+                class="btn btn-primary py- px-5"
+              >
+                Calculate
+              </button>
+            </div>
+          </div>
+
+          <div class="cards-custom py-4 col-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="text-center mb-4">
+              <img class="img-fluid" src="images/rhombus.png" alt="" />
+            </div>
+
+            <h3 id="rhombus" class="text-center mb-3">Rhombus</h3>
+            <p class="text-center mb-3">Area (A) = 0.5×d₁×d₂</p>
+
+            <div class="text-center mb-3">
+              <input
+                class="me-3 mb-2 rounded-2 w-25"
+                type="text"
+                name=""
+                id="rhombus-d1"
+                placeholder="d1"
+              />
+              <span>cm</span>
+              <input
+                class="me-3 mb-2 rounded-2 w-25"
+                type="text"
+                name=""
+                id="rhombus-d2"
+                placeholder="d2"
+              />
+              <span>cm</span>
+            </div>
+
+            <div id="calculate-rhombus" class="text-center">
+              <button class="btn btn-primary py- px-5">Calculate</button>
+            </div>
+          </div>
+
+          <div class="cards-custom py-4 col-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="text-center mb-4">
+              <img class="img-fluid" src="images/pentagon.png" alt="" />
+            </div>
+
+            <h3 id="pentagon" class="text-center mb-3">Pentagon</h3>
+            <p class="text-center mb-3">Area (A) = 0.5×p×b</p>
+
+            <div class="text-center mb-3">
+              <input
+                class="me-3 mb-2 rounded-2 w-25"
+                type="text"
+                name=""
+                id="pentagon-p"
+                placeholder="p"
+              />
+              <span>cm</span>
+              <input
+                class="me-3 mb-2 rounded-2 w-25"
+                type="text"
+                name=""
+                id="pentagon-b"
+                placeholder="b"
+              />
+              <span>cm</span>
+            </div>
+
+            <div id="calculate-pentagon" class="text-center">
+              <button class="btn btn-primary py- px-5">Calculate</button>
+            </div>
+          </div>
+
+          <div class="cards-custom py-4 col-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="text-center mb-4">
+              <img class="img-fluid" src="images/ellipse.png" alt="" />
+            </div>
+
+            <h3 id="ellipse" class="text-center mb-3">Ellipse</h3>
+            <p class="text-center mb-3">Area (A) = π×a×b</p>
+
+            <div class="text-center mb-3">
+              <input
+                class="me-3 mb-2 rounded-2 w-25"
+                type="text"
+                name=""
+                id="ellipse-a"
+                placeholder="a"
+              />
+              <span>cm</span>
+              <input
+                class="me-3 mb-2 rounded-2 w-25"
+                type="text"
+                name=""
+                id="ellipse-b"
+                placeholder="b"
+              />
+              <span>cm</span>
+            </div>
+
+            <div class="text-center">
+              <button id="calculate-ellipse" class="btn btn-primary py- px-5">
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3 result-area">
+          <h3 class="text-center text-decoration-underline">
+            Area Calculation
+          </h3>
+
+          <table>
+            <tbody id="table-container"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- Javacript -->
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
