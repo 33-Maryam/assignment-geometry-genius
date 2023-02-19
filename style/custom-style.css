@@ -1,0 +1,30 @@
+/* added custom font family */
+* {
+    font-family: "Inter", sans-serif !important;
+  }
+  
+  header h1 {
+    font-weight: 700 !important;
+    font-size: 45px !important;
+    color: rgba(17, 17, 17, 0.8);
+  }
+  
+  header h2 {
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    color: rgba(17, 17, 17, 0.6);
+  }
+  
+  .nav-custom {
+    background: rgba(16, 144, 216, 0.1);
+    border-radius: 8px;
+  }
+  
+  .cards-custom,
+  .result-area {
+    background: #ffffff !important;
+    border: 1px solid rgba(17, 17, 17, 0.1) !important;
+    border-radius: 8px !important;
+  }
+  
