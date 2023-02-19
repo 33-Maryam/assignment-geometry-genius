@@ -1,3 +1,69 @@
+// utility function area
+
+function getInputField(inputFieldId) {
+    const inputField = document.getElementById(inputFieldId);
+    const inputFieldValueString = inputField.value;
+    if (inputFieldValueString === "" || inputFieldValueString === null) {
+      return "";
+    }
+    const inputFieldValue = parseFloat(inputFieldValueString);
+    inputField.value = "";
+    return inputFieldValue;
+  }
+  
+  function getTextElement(elementId) {
+    const textElement = document.getElementById(elementId);
+    const textElementValue = textElement.innerText;
+    return textElementValue;
+  }
+  
+  let counter = 0;
+  
+  function setElement(Name, Area) {
+    counter++;
+    const tableContainer = document.getElementById("table-container");
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${counter}.</td>
+      <td>${Name} </td>
+      <td>${Area}<span>cm<sup>2</sup></span></td>
+      <td><button>Convert to m<sup>2</sup></button></td>
+      `;
+    tableContainer.appendChild(tr);
+  }
+  
+  function inputValidation(inputA, inputB) {
+    if (inputA === "" || inputB === "") {
+      alert("Please put an input then click!!!");
+      return false;
+    } else if (isNaN(inputA) || isNaN(inputB)) {
+      alert("Please provide a valid number, not text!!!");
+      return false;
+    } else if (inputA < 0 || inputB < 0) {
+      alert("Please provide a positive number!!!");
+      return false;
+    } else {
+      return true;
+    }
+  }
+  
+  function triangleRhombusPentagonArea(a, b) {
+    const area = 0.5 * a * b;
+    return area.toFixed(2);
+  }
+  
+  function rectangleParallelogramArea(a, b) {
+    const area = a * b;
+    return area.toFixed(2);
+  }
+  
+  function ellipseArea(a, b) {
+    const area = 3.1416 * a * b;
+    return area.toFixed(2);
+  }
+
+
+
 // event handling area
 
 document.getElementById("btn-blog").addEventListener("click", function () {
