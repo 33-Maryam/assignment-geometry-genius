@@ -1,10 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Answers</title>
-  </head>
-  <body></body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-200	">
+    <h1 class="text-center font-bold text-5xl p-8 ">Important Question Answer For Interview</h1>
+    <div>
+        <h2 class="font-semibold text-lg text-blue-800 	 bg-green-50 text-center mt-8 p-2">1. What is DOM and what is the purpose of DOM?</h2>
+    <p class="bg-green-100	mt-2 p-8 px-32 text-center">Full form of DOM is the ''Document Object Model." Dom is use for interfacing web documents it helps user to communicate with a computer. Here document is HTML and object is the elements of HTML and the model is structure of web document where 'html' tag is the root tag and other other element into the 'html' tag is called child element or child node including nested child node. We can change the style of the structure through by calling the element that makes the webpage interactive and dynamic. Dom connected different page with parent page. Dom create structural representation of interactive document</p>
+    </div>
+    <div>
+        <h2 class="font-semibold text-lg text-blue-800 	 bg-green-50 text-center mt-8 p-2">2. How will you select HTML elements using DOM? Name the DOM methods.</h2>
+    <p class="bg-green-100	mt-2 pt-8 px-32 text-center">We can manipulate html elements with JavaScript. For manipulating html elements first have to select the element. We can select the html element through several methods:
+        <li class="text-pink-700 text-center bg-green-100 pt-2">getElementsByTagName()
+        </li>
+            <p class="bg-green-100 text-center px-12">By using this method we will find the html tag and manipulate the element.The problem on which using this method is it select all tag in html which naming the selecting tag. Usually this method is use less than other. Example, const element = document.getElementsByTagName("p");</p>
+        <li class="text-pink-700 text-center bg-green-100 pt-2">getElementsById()
+        </li>
+            <p class="bg-green-100 text-center px-12">This is the easiest method to select element on the DOM. It's work as CSS style where in html tag give a unique id by which CSS style work same this id is use in DOM for select the element. By which we will get specific tag for manipulating.This method is use frequently. Example: const element = document.getElementById("intro");</p>
+        
+    </p>
+        <li class="text-pink-700 text-center bg-green-100 pt-2">getElementsByClass()
+        </li>
+            <p class="bg-green-100 text-center px-12">This method is select more than one element which having same class name. If any elements need same type of manipulation that time this method is work. It will give you array like object. Example: const x = document.getElementsByClassName("detail-container");<br>
+            this 'detail-container' class will applicable for same named class and will return a list of element.</p>
+        <li class="text-pink-700 text-center bg-green-100 pt-2">querySelectorAll
+        </li>
+            <p class="bg-green-100 text-center px-12">In querySelectorAll for select a CSS id need to call the id same as CSS style as it is manipulate whole CSS id list. This also called node list cause it is static and work for each of the value of the id as object. This method is work in for loop function. Example: const x = document.getElementsByClassName(".detail-container li");<br>
+            this 'detail-container li' class will manipulate the whole li from the class.</p>
+        <li class="text-pink-700 text-center bg-green-100 pt-2">querySelectorl
+        </li>
+            <p class="bg-green-100 text-center px-12">querySelector use for select the first one from the class. Work as getElementById. We will manipulate individually by this method. Example: const x = document.getElementsByClassName(".detail-container li");<br>
+            this 'detail-container li' class will manipulate the first li from the class.</p>
+        
+    </p>
+    </div>
+    <div>
+        <h2 class="font-semibold text-lg text-blue-800 	 bg-green-50 text-center mt-8 p-2">3.  What is event bubble?</h2>
+    <p class="bg-green-100	mt-2 p-8 px-32 text-center">Any action which is use for called function or perform any operation is called event. Example: click, mouseover, mouse::hover, onfocus etc.<br>
+    Bubbling is happened with every event. Bubbling means suppose you take a glass of water where bubble are on the bottom of the glass and eventually jump to the top. In event bubbling also work as same way. First it operate child element then parent element. For stop this used event propagation.</p>
+    </div>
+    <div>
+        <h2 class="font-semibold text-lg text-blue-800 	 bg-green-50 text-center mt-8 p-2">4.  What is a callback function and why will you use it?
+
+        </h2>
+    <p class="bg-green-100	mt-2 p-8 px-32 text-center">Callback function is use for pass an argument to another function. The call back function is start operating when another function finished operating. In javascript common callback function is event handle. It make the element more interactive. Callback function display more command by clicking a simple button so this make the web document dynamic and interactive.</p>
+    </div>
+   
+</body>
 </html>
